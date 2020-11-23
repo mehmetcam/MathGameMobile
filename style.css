@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+#timer{
+    color: white;
+    position: absolute;
+    opacity: 0.3;
+    font-size: 18rem;
+    
+    
+}
+
+.timerAni{
+    animation-name: timer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes timer{
+    0%{
+        color: red;
+        opacity: 1;
+        font-size: 18rem;
+    }
+
+    50%{
+        color: white;
+        opacity: 0.3;
+        font-size: 18rem;
+    }
+
+    100%{
+        color: red;
+        opacity: 1;
+        font-size: 18rem;
+    }
+}
+
+#game{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#chiffre1{
+    margin-top: 5%;
+    font-size: 3rem;
+}
+
+#chiffre2{
+    margin-top: 5%;
+    font-size: 3rem;
+}
+
+#operator{
+    margin-top: 5%;
+    font-size: 3rem;
+}
+
+#buttons{
+    width: 100vw;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;  
+
+}
+
+#buttons1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#buttons2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 90%;
+}
+
+
+#hide{
+    position: absolute;
+    width: 0;
+    height: 0;
+    background:transparent;
+    border:none;
+    
+}
+
+
+
+
+button{
+    
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    outline:none;
+    box-shadow: none!important;
+    
+}
+
+/*button:active{
+    outline:none;
+    
+}*/
+
+#score{
+    margin-top: 5%;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #chiffre1{
+        margin-top: 10%;
+        font-size: 4rem;
+    }
+    
+    #chiffre2{
+        margin-top: 10%;
+        font-size: 4rem;
+    }
+    
+    #operator{
+        margin-top: 10%;
+        font-size: 4rem;
+    }
+    
+    #buttons{
+        margin-top: 10%;
+    }
+
+    #score{
+        margin-top: 10%;
+        font-size: 4rem;
+    }
+
+}
