@@ -1,2 +1,2 @@
 # MathGameMobile
-A basic math game with JavaScript / Un jeu simple de math avec JavaScript
+A basic responsive math game with JavaScript / Un jeu responsive simple de math avec JavaScript
